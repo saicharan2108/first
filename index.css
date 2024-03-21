@@ -1,29 +1,194 @@
+/* Import Google Fonts and body style */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
 body {
-    background-color: #3bbed5;
     margin: 0;
+    font-family: sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: black;
+    color: white;
+    width: 90px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 5px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar li a i {
+    margin-right: 10px;
+    font-size: 16px;
+    /* Set fixed size for icons */
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar li a:hover {
+    background-color: #333;
+}
+
+/* Vertical alignment for sidebar links */
+.sidebar ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar ul li a p {
+    margin-top: 2px;
+}
+
+/* Additional styling as required */
+
+/* Bottom icons */
+.bottom-icons {
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-icons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.bottom-icons i {
+    margin: 10px;
+    font-size: 24px;
+    /* Set fixed size for icons */
+}
+
+.main {
+    display: flex;
+}
+
+
+/* General Styles */
+.nav-2 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    max-width: 400px;
+    margin-left: 80px;
+
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #222;
+    /* Light black */
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    font-family: 'Bitter', sans-serif;
+    width: 100%;
+    padding: 15px 0;
 }
 
-.container {
+nav h1 {
+    margin: 0;
+    padding-right: 10px;
+    border-right: 2px solid white;
+    /* Horizontal line */
+
+}
+
+/* Card Styles */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow cards to wrap to multiple rows */
+    justify-content: center;
+    width: 90%;
+    background-color: #333;
+    max-width: 1300px;
+    /* Limit max width for responsiveness */
+    margin: 30px auto;
+}
+
+.card {
+    background-color: #3f434d;
+    /* Light white */
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex: 0 0 30%;
+    /* Each card takes up 30% of the row's width */
+}
+
+.card i {
+    font-size: 20px;
+
+    color: white;
+}
+
+.card p {
+    color: white;
+    font-size: 10px;
+    margin: 10px 0;
     text-align: center;
 }
 
-h1 {
+.fa {
+    height: 20px;
+    width: 20px;
+}
+
+.icons-container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.we {
     color: white;
-    font-size: 60px;
     font-weight: bold;
-    margin: 0; 
+    text-align: left;
 }
 
-img {
-    max-width: 900px;
-    margin: 20px 0; 
-}
-
-p {
-   color: white; /* Match background color */
+.card-r {
+    display: flex;
 }
